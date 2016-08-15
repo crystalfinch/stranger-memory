@@ -1,0 +1,24 @@
+{
+  "name": "stranger-memory",
+  "version": "1.0.0",
+  "description": "A Memory game with a Stranger Things theme",
+  "main": "js/stranger-memory.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crystalfinch/stranger-memory.git"
+  },
+  "author": "Crystal Finch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crystalfinch/stranger-memory/issues"
+  },
+  "homepage": "https://github.com/crystalfinch/stranger-memory",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
