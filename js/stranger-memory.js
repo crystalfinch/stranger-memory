@@ -31,7 +31,7 @@
 
 	// default settings
 	StrangerMemory.prototype.settings = {
-		wrapper : "sm-wrapper",
+		wrapper : "sm-board",
 		cards : [
 			{
 				id: 1,

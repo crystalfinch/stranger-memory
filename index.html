@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Stranger Memory</title>
+	<link href="https://fonts.googleapis.com/css?family=Cairo:300,400,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+	<script type="text/javascript" src="js/stranger-memory.js"></script>
+</head>
+<body>
+
+	<div class="panel">
+		<h1>Stranger Memory</h1>
+		<div class="alert">Find all the matches before Will Byers gets eaten by The Monster</div>
+	</div>
+
+	<div id="sm-board" class="board">
+
+		<div class="utility">
+			<h3 class="utility__heading">
+				Level
+				<span class="utility__heading--digit">1</span>
+			</h3>
+			<h3 class="utility__heading">
+				Moves
+				<span class="utility__heading--digit">1</span>
+			</h3>
+			<button class="utility__button utility__button--reset">Reset Game</button>
+			<button class="utility__button utility__button--music">Music</button>
+		</div>
+
+		<ul class="tiles">
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/barb.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/chief-hopper.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/connie.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/dr-brenner.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/dustin.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/eggos.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/eleven.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/jonathan.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/joyce.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/karen.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/lucas.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/mike.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/monster.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/mr-clarke.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/nancy.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<!-- front content -->
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<!-- back content -->
+						<img src="images/steve.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<!--
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<img src="images/troy.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			<li class="tile" data-id="">
+				<div class="tile-faces">
+					<div class="tile-face --front">
+						<div class="tile-cover"></div>
+					</div>
+					<div class="tile-face --back">
+						<img src="images/will.jpg" alt="Name">
+					</div>
+				</div>
+			</li>
+			-->
+		</ul>
+	</div>
+
+</body>
+</html>
