@@ -289,6 +289,11 @@
 		this.board.className = "sm-board";
 		document.getElementById(this.settings.wrapper).appendChild(this.board);
 
+		this._startScreen();
+	}
+
+	StrangerMemory.prototype._startScreen = function() {
+
 		// start screen
 		this.startScreen = document.createElement("div");
 		this.startScreen.id = "smStartScreen";
@@ -602,7 +607,11 @@
 
 	StrangerMemory.prototype.resetGame = function() {
 		this._clearGame();
-		this._setupGame();
+
+		// remove level class from board
+		this.board.classList.remove("sm-level-" + this.chosenLevel);
+
+		this._startScreen();
 	}
 
 	// Cube Rotation
