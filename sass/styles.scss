@@ -1202,37 +1202,38 @@ a {
 // -------------------------
 #fallingFlakes {
 	bottom: 0;
-	opacity: .25;
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: 100px;
+	z-index: 0!important;
 
 	@media #{$tablet-up} {
 		top: 0;
 	}
 
 	.flake {
-		color: rbga(255,255,255,0.6);
+		color: darken($white, 30%);
 		font-family: Cambria, Georgia, serif;
 		font-size: 14px;
 		line-height: 24px;
+		opacity: .5;
 		padding-left: 15px;
 		position: fixed;
-		text-shadow: 1px 1px 3px #fff, -1px -1px 3px #fff, -1px 3px 3px #fff;
+		text-shadow: 1px 1px 3px darken($white, 30%), -1px -1px 3px darken($white, 30%), -1px 3px 3px darken($white, 30%);
 		user-select: none;
-		z-index: 1000;
+		z-index: 0!important;
 
 		&:hover {
 		    cursor: default;
 		}
 
 		&:nth-child(3n+1) {
-			text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff, -1px 3px 1px #fff;
+			text-shadow: 1px 1px 1px darken($white,30%), -1px -1px 1px darken($white, 30%), -1px 3px 1px darken($white, 30%);
 		}
 
 		&:nth-child(4n+1) {
-			text-shadow: 1px 1px 1px #fff, -1px -2px 3px #fff, -1px 2px 1px #fff;
+			text-shadow: 1px 1px 1px darken($white, 30%), -1px -2px 3px darken($white, 30%), -1px 2px 1px darken($white, 30%);
 		}
 	}
 }

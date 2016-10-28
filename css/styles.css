@@ -847,30 +847,31 @@ a {
 
 #fallingFlakes {
   bottom: 0;
-  opacity: .25;
   position: absolute;
   left: 0;
   right: 0;
-  top: 100px; }
+  top: 100px;
+  z-index: 0 !important; }
   @media screen and (min-width: 768px) {
     #fallingFlakes {
       top: 0; } }
   #fallingFlakes .flake {
-    color: rbga(255, 255, 255, 0.6);
+    color: #506b74;
     font-family: Cambria, Georgia, serif;
     font-size: 14px;
     line-height: 24px;
+    opacity: .5;
     padding-left: 15px;
     position: fixed;
-    text-shadow: 1px 1px 3px #fff, -1px -1px 3px #fff, -1px 3px 3px #fff;
+    text-shadow: 1px 1px 3px #506b74, -1px -1px 3px #506b74, -1px 3px 3px #506b74;
     user-select: none;
-    z-index: 1000; }
+    z-index: 0 !important; }
     #fallingFlakes .flake:hover {
       cursor: default; }
     #fallingFlakes .flake:nth-child(3n+1) {
-      text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff, -1px 3px 1px #fff; }
+      text-shadow: 1px 1px 1px #506b74, -1px -1px 1px #506b74, -1px 3px 1px #506b74; }
     #fallingFlakes .flake:nth-child(4n+1) {
-      text-shadow: 1px 1px 1px #fff, -1px -2px 3px #fff, -1px 2px 1px #fff; }
+      text-shadow: 1px 1px 1px #506b74, -1px -2px 3px #506b74, -1px 2px 1px #506b74; }
 
 .lights {
   text-align: center;
