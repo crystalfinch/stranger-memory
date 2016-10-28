@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset=utf-8 />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Stranger Memory | a memory match game in a 3D cube</title>
 	<link href="https://fonts.googleapis.com/css?family=Cairo:300,400,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css" />
@@ -12,17 +13,28 @@
 	<script type="text/javascript" src="./js/scripts.js"></script>
 </head>
 <body>
-
-	<!-- <h1>Stranger Memory</h1> -->
-	<!-- <div class="alert">Find all the matches before Will Byers gets eaten by The Monster</div> -->
-
-	<div class="panel panel-music">
-		<a href="#"class="trigger" title="Open Music Panel"><i class="fa fa-music"></i></a>
-		<h2>Stranger Memory Playlist</h2>
-		<iframe src="https://embed.spotify.com/?uri=spotify:user:crystalstorm23:playlist:2wwmFNhvcLRjpfCfDrKwrR&view=list" frameborder="0" allowtransparency="true"></iframe>
+	<div class="loading">
+		<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+	</div>
+	
+	<div id="main">
+		<h1>Stranger Memory</h1>
+		<div class="music-widget">
+			<a href="#"class="trigger" title="Music"><i class="fa fa-music"></i></a>
+			<div class="popover">
+				<div class="inside">
+					<a href="#" class="close trigger" title="Close"><i class="fa fa-times"></i></a>
+					<iframe src="https://embed.spotify.com/?uri=spotify:user:crystalstorm23:playlist:2wwmFNhvcLRjpfCfDrKwrR&view=list" frameborder="0" allowtransparency="true"></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper"></div>
+		<div id="fallingFlakes">
+			<p class="flake">&bull;</p>
+		</div>
 	</div>
 
-	<div id="wrapper"></div>
-
+	<script type="text/javascript" src="./js/fallingsnow_v6.js"></script>
+	<script type="text/javascript" src="./js/prefixfree.min.js"></script>
 </body>
 </html>

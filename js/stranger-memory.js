@@ -26,256 +26,324 @@
 	}
 
 	function StrangerMemory( settings ) {
-		// do stuff
+		// initialize!
 		this._init();
 	}
 
 	// default settings
 	StrangerMemory.prototype.settings = {
 		wrapper : "wrapper",
-		cards : [
+		tiles : [
 			{
 				id: 1,
-				name: "Barb",
-				image: "images/barb.jpg"
+				name: "Barb's Bandage",
+				image: "images/tiles/barb-bandage.jpg"
 			},
 			{
 				id: 2,
-				name: "Chief Hopper",
-				image: "images/chief-hopper.jpg"
+				name: "Barb with beer",
+				image: "images/tiles/barb-beer.jpg"
 			},
 			{
 				id: 3,
-				name: "Connie",
-				image: "images/connie.jpg"
+				name: "Barb in the car",
+				image: "images/tiles/barb-car.jpg"
 			},
 			{
 				id: 4,
-				name: "Dr. Brenner",
-				image: "images/dr-brenner.jpg"
+				name: "Barb at the house",
+				image: "images/tiles/barb-house.jpg"
 			},
 			{
 				id: 5,
-				name: "Dustin",
-				image: "images/dustin.jpg"
+				name: "Barb at the pool",
+				image: "images/tiles/barb-pool.jpg"
 			},
 			{
 				id: 6,
-				name: "Eggos",
-				image: "images/eggos.jpg"
+				name: "Barb",
+				image: "images/tiles/barb.jpg"
 			},
 			{
 				id: 7,
-				name: "Eleven",
-				image: "images/eleven.jpg"
+				name: "Bullies",
+				image: "images/tiles/bullies.jpg"
 			},
 			{
 				id: 8,
-				name: "Jonathan",
-				image: "images/jonathan.jpg"
+				name: "Chief Hopper",
+				image: "images/tiles/chief-hopper.jpg"
 			},
 			{
 				id: 9,
-				name: "Joyce",
-				image: "images/joyce.jpg"
+				name: "Connie",
+				image: "images/tiles/connie-smile.jpg"
 			},
 			{
 				id: 10,
-				name: "Karen",
-				image: "images/karen.jpg"
+				name: "Connie",
+				image: "images/tiles/connie.jpg"
 			},
 			{
 				id: 11,
-				name: "Lucas",
-				image: "images/lucas.jpg"
+				name: "Dr. Brenner and Eleven",
+				image: "images/tiles/dr-brenner-eleven.jpg"
 			},
 			{
 				id: 12,
-				name: "Mike",
-				image: "images/mike.jpg"
+				name: "Dr. Brenner in suit",
+				image: "images/tiles/dr-brenner-suit.jpg"
 			},
 			{
 				id: 13,
-				name: "The Monster",
-				image: "images/monster.jpg"
+				name: "Dr. Brenner in suit",
+				image: "images/tiles/dr-brenner-suit2.jpg"
 			},
 			{
 				id: 14,
-				name: "Mr. Clarke",
-				image: "images/mr-clarke.jpg"
+				name: "Dr. Brenner",
+				image: "images/tiles/dr-brenner.jpg"
 			},
 			{
 				id: 15,
-				name: "Nancy",
-				image: "images/nancy.jpg"
+				name: "Dustin and the bullies",
+				image: "images/tiles/dustin-bullies.jpg"
 			},
 			{
 				id: 16,
-				name: "Steve",
-				image: "images/steve.jpg"
+				name: "Dustin",
+				image: "images/tiles/dustin-smiling.jpg"
 			},
 			{
 				id: 17,
-				name: "Troy",
-				image: "images/troy.jpg"
+				name: "Dustin",
+				image: "images/tiles/dustin.jpg"
 			},
 			{
 				id: 18,
-				name: "Will",
-				image: "images/will.jpg"
-			}/*,
-
-			// NEED IMAGES
+				name: "Eggos",
+				image: "images/tiles/eggos.jpg"
+			},
 			{
 				id: 19,
-				name: "Nineteen",
-				image: "images/will.jpg"
+				name: "Eleven",
+				image: "images/tiles/eleven-door.jpg"
 			},
 			{
 				id: 20,
-				name: "Twenty",
-				image: "images/will.jpg"
+				name: "Eleven",
+				image: "images/tiles/eleven-fries.jpg"
 			},
 			{
 				id: 21,
-				name: "Twenty-one",
-				image: "images/will.jpg"
+				name: "Eleven and Mike",
+				image: "images/tiles/eleven-mike.jpg"
 			},
 			{
 				id: 22,
-				name: "Twenty-two",
-				image: "images/will.jpg"
+				name: "Eleven",
+				image: "images/tiles/eleven-mouthbreather.jpg"
 			},
 			{
 				id: 23,
-				name: "Twenty-three",
-				image: "images/will.jpg"
+				name: "Eleven pointing",
+				image: "images/tiles/eleven-pointing.jpg"
 			},
 			{
 				id: 24,
-				name: "Twenty-four",
-				image: "images/will.jpg"
+				name: "Eleven in the rain",
+				image: "images/tiles/eleven-rain.jpg"
 			},
 			{
 				id: 25,
-				name: "Twenty-five",
-				image: "images/will.jpg"
+				name: "Eleven in the tank",
+				image: "images/tiles/eleven-tank.jpg"
 			},
 			{
 				id: 26,
-				name: "Twenty-six",
-				image: "images/will.jpg"
+				name: "Eleven with wig",
+				image: "images/tiles/eleven-wig.jpg"
 			},
 			{
 				id: 27,
-				name: "Twenty-seven",
-				image: "images/will.jpg"
+				name: "Friends hugging",
+				image: "images/tiles/friends-hugging.jpg"
 			},
 			{
 				id: 28,
-				name: "Twenty-eight",
-				image: "images/will.jpg"
+				name: "Jonathan and Nancy",
+				image: "images/tiles/jonathan-nancy.jpg"
 			},
 			{
 				id: 29,
-				name: "Twenty-nine",
-				image: "images/will.jpg"
+				name: "Jonathan",
+				image: "images/tiles/jonathan-pillow.jpg"
 			},
 			{
 				id: 30,
-				name: "Thirty",
-				image: "images/will.jpg"
+				name: "Jonathan",
+				image: "images/tiles/jonathan.jpg"
 			},
 			{
 				id: 31,
-				name: "Thirty-one",
-				image: "images/will.jpg"
+				name: "Joyce with the flashlight",
+				image: "images/tiles/joyce-flashlight.jpg"
 			},
 			{
 				id: 32,
-				name: "Thirty-two",
-				image: "images/will.jpg"
+				name: "Joyce and the lights",
+				image: "images/tiles/joyce-lights.jpg"
 			},
 			{
 				id: 33,
-				name: "Thirty-three",
-				image: "images/will.jpg"
+				name: "Joyce and the lights",
+				image: "images/tiles/joyce-lights2.jpg"
 			},
 			{
 				id: 34,
-				name: "Thirty-four",
-				image: "images/will.jpg"
+				name: "Joyce on the phone",
+				image: "images/tiles/joyce-phone.jpg"
 			},
 			{
 				id: 35,
-				name: "Thirty-five",
-				image: "images/will.jpg"
+				name: "Joyce scared",
+				image: "images/tiles/joyce-scared.jpg"
 			},
 			{
 				id: 36,
-				name: "Thirty-six",
-				image: "images/will.jpg"
+				name: "Joyce smoking",
+				image: "images/tiles/joyce-smoking.jpg"
 			},
 			{
 				id: 37,
-				name: "Thirty-seven",
-				image: "images/will.jpg"
+				name: "Joyce",
+				image: "images/tiles/joyce.jpg"
 			},
 			{
 				id: 38,
-				name: "Thirty-eight",
-				image: "images/will.jpg"
+				name: "Karen",
+				image: "images/tiles/karen.jpg"
 			},
 			{
 				id: 39,
-				name: "Thirty-nine",
-				image: "images/will.jpg"
+				name: "Lucas",
+				image: "images/tiles/lucas-walkie.jpg"
 			},
 			{
 				id: 40,
-				name: "Forty",
-				image: "images/will.jpg"
+				name: "Lucas",
+				image: "images/tiles/lucas.jpg"
 			},
 			{
 				id: 41,
-				name: "Forty-one",
-				image: "images/will.jpg"
+				name: "Lucas",
+				image: "images/tiles/lucas2.jpg"
 			},
 			{
 				id: 42,
-				name: "Forty-two",
-				image: "images/will.jpg"
+				name: "Mike",
+				image: "images/tiles/mike-walkie.jpg"
 			},
 			{
 				id: 43,
-				name: "Forty-three",
-				image: "images/will.jpg"
+				name: "Mike",
+				image: "images/tiles/mike.jpg"
 			},
 			{
 				id: 44,
-				name: "Forty-four",
-				image: "images/will.jpg"
+				name: "The Monster",
+				image: "images/tiles/monster.jpg"
 			},
 			{
 				id: 45,
-				name: "Forty-five",
-				image: "images/will.jpg"
+				name: "The Monster",
+				image: "images/tiles/monster2.jpg"
 			},
 			{
 				id: 46,
-				name: "Forty-six",
-				image: "images/will.jpg"
+				name: "Mr. Clarke explaining",
+				image: "images/tiles/mr-clarke-explaining.jpg"
 			},
 			{
 				id: 47,
-				name: "Forty-seven",
-				image: "images/will.jpg"
+				name: "Mr. Clarke",
+				image: "images/tiles/mr-clarke.jpg"
 			},
 			{
 				id: 48,
-				name: "Forty-eight",
-				image: "images/will.jpg"
-			}*/
+				name: "Mr. Clarke",
+				image: "images/tiles/mr-clarke2.jpg"
+			},
+			{
+				id: 49,
+				name: "Nancy and Jonathan",
+				image: "images/tiles/nancy-jonathan.jpg"
+			},
+			{
+				id: 50,
+				name: "Nancy on the phone",
+				image: "images/tiles/nancy-phone.jpg"
+			},
+			{
+				id: 51,
+				name: "Nancy scared",
+				image: "images/tiles/nancy-scared.jpg"
+			},
+			{
+				id: 52,
+				name: "Nancy in the Upside Down",
+				image: "images/tiles/nancy-upside-down.jpg"
+			},
+			{
+				id: 53,
+				name: "Nancy in the Upside Down",
+				image: "images/tiles/nancy-upside-down2.jpg"
+			},
+			{
+				id: 54,
+				name: "Nancy",
+				image: "images/tiles/nancy.jpg"
+			},
+			{
+				id: 55,
+				name: "Hawkins Police",
+				image: "images/tiles/police.jpg"
+			},
+			{
+				id: 56,
+				name: "Steve",
+				image: "images/tiles/steve.jpg"
+			},
+			{
+				id: 57,
+				name: "Train tracks",
+				image: "images/tiles/train-tracks.jpg"
+			},
+			{
+				id: 58,
+				name: "Troy",
+				image: "images/tiles/troy.jpg"
+			},
+			{
+				id: 59,
+				name: "The Upside Down",
+				image: "images/tiles/upside-down.jpg"
+			},
+			{
+				id: 60,
+				name: "Will with the gun",
+				image: "images/tiles/will-gun.jpg"
+			},
+			{
+				id: 61,
+				name: "Will on the phone",
+				image: "images/tiles/will-phone.jpg"
+			},
+			{
+				id: 62,
+				name: "Will",
+				image: "images/tiles/will.jpg"
+			}
 		],
 		onGameStart : function() { return false; },
 		onGameEnd : function() { return false; }
@@ -297,8 +365,13 @@
 		// start screen
 		this.startScreen = document.createElement("div");
 		this.startScreen.id = "smStartScreen";
-		this.startScreen.className = "sm-start-screen";
+		this.startScreen.className = "sm-start-screen sm-alert";
 		document.getElementById("smBoard").appendChild(this.startScreen);
+
+		setTimeout(function() {
+			// fade in start screen
+			document.querySelector(".sm-start-screen").classList.add('fadeIn');
+		}, 500);
 
 		this._setupGame();
 	}
@@ -306,13 +379,13 @@
 	StrangerMemory.prototype._setupGame = function() {
 		var self = this;
 		this.gameState = 1;
-		this.cards = this.settings.cards.shuffle();
-		this.card1 = "";
-		this.card2 = "";
-		this.card1id = "";
-		this.card2id = "";
-		this.card1flipped = false;
-		this.card2flipped = false;
+		this.tiles = this.settings.tiles.shuffle();
+		this.tile1 = "";
+		this.tile2 = "";
+		this.tile1id = "";
+		this.tile2id = "";
+		this.tile1flipped = false;
+		this.tile2flipped = false;
 		this.flippedTiles = 0;
 		this.chosenLevel = "";
 		this.numMoves = 0;
@@ -338,11 +411,12 @@
 
 		// start screen markup
 		this.startScreenHTML = '<h2>Select Level</h2>' +
-			'<ul>' +
+			'<ul class="sm-level-select">' +
 				'<li data-level="1">Level 1</li>' +
 				'<li data-level="2">Level 2</li>' +
 				'<li data-level="3">Level 3</li>' +
-			'<ul>';
+			'</ul>' +
+			'<p class="warning"><span>Warning:</span> Possible spoilers inside. This game contains stills from the show.</p>';
 		this.startScreen.innerHTML = this.startScreenHTML;
 
 		this._startScreenEvents();
@@ -350,7 +424,7 @@
 
 	StrangerMemory.prototype._startScreenEvents = function() {
 		var self = this;
-		var levelsNodes = this.startScreen.querySelectorAll(".sm-start-screen ul li[data-level]");
+		var levelsNodes = this.startScreen.querySelectorAll(".sm-alert ul li[data-level]");
 
 		for (var i = 0, len = levelsNodes.length; i < len; i++) {
 			var levelNode = levelsNodes[i];
@@ -362,95 +436,102 @@
 				}
 			});
 		}
-
-		/*
-		levelsNodes.forEach((levelNode) => {
-			levelNode.addEventListener("click", function(e) {
-				//console.log("You selected " + levelNode.innerHTML);
-				if (self.gameState === 1) {
-					//console.log("Game State is 1");
-					self._setupGameWrapper(this);
-				}
-			});
-		});
-		*/
 	}
 
 	StrangerMemory.prototype._setupGameWrapper = function(levelNode) {
 		var self = this;
 		this.chosenLevel = levelNode.getAttribute("data-level");
 
+		// fade start screen out
+		if (document.querySelector(".sm-start-screen.fadeIn") !== null) {
+			this.startScreen.classList.remove('fadeIn');
+		}
 		// remove start screen
-		this.startScreen.parentNode.removeChild(this.startScreen);
+		if (this.startScreen.parentNode !== null) {
+			this.startScreen.parentNode.removeChild(this.startScreen);
+		}
 
 		// add level class to board
 		this.board.classList.add("sm-level-" + this.chosenLevel);
 
 		// utilities markup & append to utility bar
-		this.utilities = '<div class="sm-utility__meta sm-utility__meta--level">' +
-				'Level: <span class="sm-utility__meta__digit"></span>' +
-			'</div>' +
-			'<div class="sm-utility__meta sm-utility__meta--moves">' +
-				'Moves: <span class="sm-utility__meta__digit">0</span>' +
-			'</div>' +
-			'<button id="resetGameBtn" class="sm-utility__button sm-utility__button--reset">Start Over</button>';
+		this.utilities = '<div class="inside">' +
+				'<div class="sm-utility__meta sm-utility__meta--level">' +
+					'Level <span class="sm-utility__meta__digit"></span>' +
+				'</div>' +
+				'<div class="sm-utility__meta sm-utility__meta--moves">' +
+					'Moves: <span class="sm-utility__meta__digit">0</span>' +
+				'</div>' +
+				'<button id="resetGameBtn" class="sm-utility__button sm-utility__button--reset">Start Over</button>' +
+			'</div>';
 		this.utilityBar.innerHTML = this.utilities;
 
 		// display level in utility bar
-		document.querySelector(".sm-utility .sm-utility__meta--level .sm-utility__meta__digit").innerHTML = this.chosenLevel;
+		if (document.querySelector(".sm-utility .sm-utility__meta--level .sm-utility__meta__digit") !== null) {
+			document.querySelector(".sm-utility .sm-utility__meta--level .sm-utility__meta__digit").innerHTML = this.chosenLevel;
+		}
 
 		// call resetGame when reset button clicked
-		document.getElementById("resetGameBtn").addEventListener("click", function(e) {
-			self.resetGame();
-		});
+		if (document.getElementById("resetGameBtn") !== null) {
+			document.getElementById("resetGameBtn").addEventListener("click", function(e) {
+				// fade out cube wrap
+				if (document.querySelector(".sm-cube-wrap.fadeIn") !== null) {
+					document.querySelector(".sm-cube-wrap").classList.remove('fadeIn');
+				}
+				// fade out utilities
+				if (document.querySelector(".sm-utility .inside.fadeIn") !== null) {
+					document.querySelector(".sm-utility .inside").classList.remove('fadeIn');
+				}
+				setTimeout(function() {
+					self.resetGame();
+				}, 500);
+			});
+		}
 
 		this._renderTiles();
 	}
 
 	StrangerMemory.prototype._renderTiles = function() {
 		this.tileImages = 0;
-		this.newCards = [];
+		this.newTiles = [];
 		var faceNum = 1; // used for the number at the end of each cube face's class
 
 		switch(parseInt(this.chosenLevel)) {
 			case 1:
 				this.tileImages = 12; // 6 faces of 4 tiles (24 tiles), 12 images needed
-				console.log('Level 1 chosen, so ' + (this.tileImages * 2) + ' tiles');
 				break;
 			case 2:
 				this.tileImages = 27; // 6 faces of 9 tiles (54 tiles), 27 images needed
-				console.log('Level 2 chosen, so ' + (this.tileImages * 2) + ' tiles');
 				break;
 			case 3:
 				this.tileImages = 48; // 6 faces of 16 tiles (96 tiles), 48 images needed
-				console.log('Level 3 chosen, so ' + (this.tileImages * 2) + ' tiles');
 				break;
 		}
 
 		for (var i = 0, len = this.tileImages; i < len; i++) {
-			// push the tiles into the newCards array twice
-			this.newCards.push(this.cards[i], this.cards[i]);
+			// push the tiles into the newTiles array twice
+			this.newTiles.push(this.tiles[i], this.tiles[i]);
 		}
 
-		// shuffle so the duplicate cards aren't right next to eachother
-		this.newCards.shuffle();
+		// shuffle so the duplicate tiles aren't right next to eachother
+		this.newTiles.shuffle();
 
 		// tiles markup
 		this.tilesHTML = '<div class="cube__face cube__face--' + faceNum +'">' +
 			'<div class="inside">' +
 				'<ul class="tiles">';
 
-		for (var i = 0; i < this.newCards.length; i++) {
+		for (var i = 0; i < this.newTiles.length; i++) {
 			var num = i + 1;
-			var cubeFaces = this.newCards.length / 6; // 6 faces of the cube
+			var cubeFaces = this.newTiles.length / 6; // 6 faces of the cube
 
-			this.tilesHTML += '<li class="tile" data-id="' + this.newCards[i].id + '">' +
-				'<img src="' + this.newCards[i].image + '" alt="">' +
+			this.tilesHTML += '<li class="tile" data-id="' + this.newTiles[i].id + '">' +
+				'<img src="' + this.newTiles[i].image + '" alt="">' +
 			'</li>';
 
 			// Split into 6 faces
 			// if divisible by 6 and not the last item
-			if (num % cubeFaces == 0 && num != this.newCards.length) {
+			if (num % cubeFaces == 0 && num != this.newTiles.length) {
 				faceNum++;
 
 				this.tilesHTML += '</ul>' +
@@ -460,12 +541,23 @@
 					'<div class="inside">' +
 						'<ul class="tiles">';
 			}
-
 		}
 		this.tilesHTML += '</ul>';
 		this.cube.innerHTML = this.tilesHTML;
+
+		// fade in cube wrap
+		setTimeout(function() {
+			if (document.querySelector(".sm-cube-wrap") !== null) {
+				document.querySelector(".sm-cube-wrap").classList.add('fadeIn');
+			}
+		}, 100);
+
+		// fade in utilities
+		setTimeout(function() {
+			document.querySelector(".sm-utility .inside").classList.add('fadeIn');
+		}, 100);
+
 		this.gameState = 2;
-		// UNCOMMENT LINE BELOW WHEN FINISHED
 		//this.settings.onGameStart();
 		this._gamePlay();
 	}
@@ -485,18 +577,18 @@
 
 		tile.addEventListener("click", function(e) {
 			if (!this.classList.contains("flipped")) { // if the tile does not have the 'flipped' class
-				if (self.card1flipped === false && self.card2flipped === false) { // if no tiles are flipped
+				if (self.tile1flipped === false && self.tile2flipped === false) { // if no tiles are flipped
 					this.classList.add("flipped");
-					self.card1 = this;
-					self.card1id = this.getAttribute("data-id");
-					self.card1flipped = true;
-				} else if (self.card1flipped === true && self.card2flipped === false) { // if 1 tile is flipped
+					self.tile1 = this;
+					self.tile1id = this.getAttribute("data-id");
+					self.tile1flipped = true;
+				} else if (self.tile1flipped === true && self.tile2flipped === false) { // if 1 tile is flipped
 					this.classList.add("flipped");
-					self.card2 = this;
-					self.card2id = this.getAttribute("data-id");
-					self.card2flipped = true;
+					self.tile2 = this;
+					self.tile2id = this.getAttribute("data-id");
+					self.tile2flipped = true;
 					// do the 2 tiles match?
-					if (self.card1id == self.card2id) {
+					if (self.tile1id == self.tile2id) {
 						// matchey!
 						self._tilesMatch();
 					} else {
@@ -510,18 +602,17 @@
 
 	StrangerMemory.prototype._tilesMatch = function() {
 		var self = this;
-		//console.log('match!');
 
 		window.setTimeout(function() {
 			// add 'match' class
-			self.card1.classList.add("match");
-			self.card2.classList.add("match");
+			self.tile1.classList.add("match");
+			self.tile2.classList.add("match");
 			// reset game variables so a new pair of tiles can be evaluated
 			self._resetGameVars();
 			// add 2 more to the total flipped tile count
 			self.flippedTiles = self.flippedTiles + 2;
 			// if all the tiles are flipped, you win!
-			if (self.flippedTiles == self.newCards.length) {
+			if (self.flippedTiles == self.newTiles.length) {
 				self._winGame();
 			}
 		}, 1000);
@@ -532,12 +623,11 @@
 
 	StrangerMemory.prototype._tilesMismatch = function() {
 		var self = this;
-		//console.log('no matchey!');
 
 		window.setTimeout(function(){
 			// remove 'flipped' class
-			self.card1.classList.remove("flipped");
-			self.card2.classList.remove("flipped");
+			self.tile1.classList.remove("flipped");
+			self.tile2.classList.remove("flipped");
 			// reset game variables so a new pair of tiles can be evaluated
 			self._resetGameVars();
 		}, 1000);
@@ -548,12 +638,12 @@
 
 	StrangerMemory.prototype._resetGameVars = function() {
 		// reset game variables so a new pair of tiles can be evaluated
-		this.card1 = "";
-		this.card2 = "";
-		this.card1id = "";
-		this.card2id = "";
-		this.card1flipped = false;
-		this.card2flipped = false;
+		this.tile1 = "";
+		this.tile2 = "";
+		this.tile1id = "";
+		this.tile2id = "";
+		this.tile1flipped = false;
+		this.tile2flipped = false;
 	}
 
 	StrangerMemory.prototype._gameCounterPlusOne = function() {
@@ -563,6 +653,17 @@
 	}
 
 	StrangerMemory.prototype._clearGame = function() {
+		var self = this;
+
+		// fade out cube wrap
+		if (document.querySelector(".sm-cube-wrap.fadeIn") !== null) {
+			document.querySelector(".sm-cube-wrap").classList.remove('fadeIn');
+		}
+		// fade out utilities
+		if (document.querySelector(".sm-utility .inside.fadeIn") !== null) {
+			document.querySelector(".sm-utility .inside").classList.remove('fadeIn');
+		}
+
 		// remove the cube
 		if (this.cube.parentNode !== null) {
 			this.cubeWrap.removeChild(this.cube);
@@ -571,7 +672,7 @@
 		if (this.cubeWrap.parentNode !== null) {
 			this.board.removeChild(this.cubeWrap);
 		}
-		// remove the utility bar
+		// remove the utilities
 		if (this.utilityBar.parentNode !== null) {
 			this.board.removeChild(this.utilityBar);
 		}
@@ -586,20 +687,33 @@
 			// game win message
 			this.gameWinMsg = document.createElement("div");
 			this.gameWinMsg.id = "smWinMsg";
-			this.gameWinMsg.className = "sm-win-msg";
-			this.gameWinMsg.innerHTML = '<p>You won with ' + this.numMoves + ' moves!</p>' +
-				'<p>Play Again?</p>' +
-				'<button id="playAgainBtn" class="sm-utility__button sm-utility__button--reset">New Game</button>';
+			this.gameWinMsg.className = "sm-win-msg sm-alert";
+			this.gameWinMsg.innerHTML = '<ul class="lights">' +
+					'<li></li>' +
+					'<li></li>' +
+					'<li></li>' +
+					'<li></li>' +
+					'<li></li>' +
+					'<li></li>' +
+				'</ul>' +
+				'<h2>You won with ' + this.numMoves + ' moves!</h2>' +
+				'<button id="playAgainBtn" class="sm-utility__button sm-utility__button--reset">Play Again</button>';
 			document.getElementById("smBoard").appendChild(this.gameWinMsg);
+
+			setTimeout(function() {
+				// fade in win message
+				document.querySelector(".sm-win-msg").classList.add('fadeIn');
+			}, 500);
 
 			// New Game button event listener
 			document.getElementById("playAgainBtn").addEventListener("click", function(e) {
 				// remove the game win message
-				if (this.gameWinMsg.parentNode !== null) {
-					this.board.removeChild(this.gameWinMsg);
+				if (self.gameWinMsg.parentNode !== null) {
+					self.board.removeChild(self.gameWinMsg);
 				}
 				self.resetGame();
 			});
+
 		} else { // if an onGameEnd defined to override the default, call it
 			this.settings.onGameEnd();
 		}
@@ -633,7 +747,11 @@
 				xAngle -= 90;
 				break;
 		}
-		document.querySelector(".sm-cube").style.transform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
+
+		if (document.querySelector(".sm-cube") !== null) {
+			document.querySelector(".sm-cube").style.transform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
+		}
+
 	}, false);
 
 	// add StrangerMemory to global namespace
