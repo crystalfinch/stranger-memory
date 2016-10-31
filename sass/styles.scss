@@ -1213,14 +1213,14 @@ a {
 	}
 
 	.flake {
-		color: darken($white, 30%);
+		color: #163f47;
 		font-family: Cambria, Georgia, serif;
 		font-size: 14px;
 		line-height: 24px;
 		opacity: .5;
 		padding-left: 15px;
 		position: fixed;
-		text-shadow: 1px 1px 3px darken($white, 30%), -1px -1px 3px darken($white, 30%), -1px 3px 3px darken($white, 30%);
+		text-shadow: 1px 1px 3px #163f47, -1px -1px 3px #163f47, -1px 3px 3px #163f47;
 		user-select: none;
 		z-index: 0!important;
 
@@ -1229,11 +1229,11 @@ a {
 		}
 
 		&:nth-child(3n+1) {
-			text-shadow: 1px 1px 1px darken($white,30%), -1px -1px 1px darken($white, 30%), -1px 3px 1px darken($white, 30%);
+			text-shadow: 1px 1px 1px #163f47, -1px -1px 1px #163f47, -1px 3px 1px #163f47;
 		}
 
 		&:nth-child(4n+1) {
-			text-shadow: 1px 1px 1px darken($white, 30%), -1px -2px 3px darken($white, 30%), -1px 2px 1px darken($white, 30%);
+			text-shadow: 1px 1px 1px #163f47, -1px -2px 3px #163f47, -1px 2px 1px #163f47;
 		}
 	}
 }
