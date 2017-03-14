@@ -754,24 +754,6 @@
 
 	}, false);
 
-	// Cube Rotation: jQuery Mobile Swipe Left (for touch-enabled devices)
-	$(".sm-board").on("swipeleft", function() {
-		alert("swiped left!");
-		yAngle -= 90;
-		if (document.querySelector(".sm-cube") !== null) {
-			document.querySelector(".sm-cube").style.transform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
-		}
-	});
-
-	// Cube Rotation: jQuery Mobile Swipe Right (for touch-enabled devices)
-	$(".sm-board").on("swiperight", function() {
-		alert("swiped right!");
-		yAngle += 90;
-		if (document.querySelector(".sm-cube") !== null) {
-			document.querySelector(".sm-cube").style.transform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
-		}
-	});
-
 	// add StrangerMemory to global namespace
 	window.StrangerMemory = StrangerMemory;
 
