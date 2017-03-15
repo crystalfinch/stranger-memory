@@ -1,6 +1,4 @@
-Memory Game: https://github.com/callmenick/Memory/
 Shuffle method: https://www.kirupa.com/html5/shuffling_array_js.htm
 3D Cube: http://paulrhayes.com/2009-07/animated-css3-cube-interface-using-3d-transforms/
 Forest Image: https://www.flickr.com/photos/photosfrank/3713177013/in/photolist-6E81ak-nmcf2m-qSfKtr-qL7ACQ-dXzTmY-dP4pyU-jiPs97-jJSA2q-4nGa8H-qhKYQ2-oL9aGU-jJSC5J-dayP1N-fg1nCa-dMoVeD-81JNbX-pRfp6W-s2h6EB-nqX8dj-aAHtti-dMToD3-qJrSw5-ode4XM-qT1NWJ-pQZ3Qv-6zGRtP-fuDkg4-pQAwir-di2M5h-FQLV85-7y5nff-6zLXYs-jH15d2-nbSu2a-oCah6Q-91eXK4-deiYgP-cAgRFy-jBXLqd-nJh3fP-4QTXH6-bLE8m8-jesUcK-7aZU4w-dyf28U-iUVf6-zr3NT-kXtpob-rquaaz-EnuAQm
-Falling snow css background: https://www.kirupa.com/html5/the_falling_snow_effect.htm
 CSS Christmas lights effect: http://codepen.io/tobyj/pen/QjvEex
