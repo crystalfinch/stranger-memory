@@ -416,7 +416,7 @@
 				'<li data-level="2">Level 2</li>' +
 				'<li data-level="3">Level 3</li>' +
 			'</ul>' +
-			'<p class="warning"><span>Warning:</span> Possible spoilers inside. This game contains stills from the show.</p>';
+			'<p class="warning"><span>Instructions:</span> After choosing your level, you will use your arrow keys to move the cube.</p>';
 		this.startScreen.innerHTML = this.startScreenHTML;
 
 		this._startScreenEvents();
