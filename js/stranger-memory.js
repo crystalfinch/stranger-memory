@@ -2,6 +2,21 @@
 ;(function( window ) {
 	'use strict';
 
+	// debounce
+	function debounce(fn, delay) {
+		var timer = null;
+		// closure
+		return function() {
+			var context = this;
+			var args = arguments;
+			// if event is called, clear the timer and start over
+			clearTimeout(timer);
+			timer = setTimeout(function() {
+				fn.apply(context, args);
+			}, delay);
+		}
+	}
+
 	// shuffle
 	Array.prototype.shuffle = function() {
 		// the array that shuffle() was called on
@@ -730,7 +745,7 @@
 
 	// Cube Rotation
 	var xAngle = 0, yAngle = 0;
-	document.addEventListener('keydown', function(e) {
+	document.addEventListener('keydown', debounce(function(e) {
 		var eCode = e.charCode || e.keyCode;
 
 		switch (eCode) {
@@ -752,7 +767,7 @@
 			document.querySelector(".sm-cube").style.transform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
 		}
 
-	}, false);
+	}, 500), false);
 
 	// add StrangerMemory to global namespace
 	window.StrangerMemory = StrangerMemory;
